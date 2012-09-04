@@ -1,12 +1,13 @@
+PImage img;
+
 void setup() {
-  size(480, 120);
-    PImage b;
-b = loadImage("hOM2F.jpeg");
+  size(646, 599);
+img = loadImage("Hamburg.jpeg");
 }
-
-void draw() {
-
-image(b, 0, 0);
+void draw() {{
+background (0);
+image (img,0,0);
+}
   if (mousePressed) {
     fill(0);
   } else {
