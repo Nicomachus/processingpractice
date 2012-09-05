@@ -41,7 +41,11 @@ class Plane {
     xspeed = tempXspeed;
   }
 void display() {
-  image (img2,xpos,ypos);
+  pushMatrix();
+  translate(xpos,ypos);
+  image (img2,0,0);
+  image (img2,100,100);
+  popMatrix();
 } 
 void drive(){
   ypos = ypos + xspeed;
